@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Histogram</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="img/logo.svg" width="50" height="50" alt="Histogram Logo">
+        </a>
+      </div>
+      <h1 class="header__title">Simple Histogram</h1>
+    </header>
+
+    <main class="main">
+      <form class="main__data-form data-form" action="#" autocomplete="off">
+        <fieldset class="data-form__fieldset">
+          <legend class="data-form__legend">Enter values</legend>
+          <input class="data-form__input" type="number" placeholder="50" id="0">
+          <input class="data-form__input" type="number" placeholder="160" id="1">
+          <input class="data-form__input" type="number" placeholder="70" id="2">
+          <input class="data-form__input" type="number" placeholder="180" id="3">  
+        </fieldset>
+        <button class="data-form__button" type="submit">Render</button>
+      </form>
+      <section class="main__histogram histogram">
+        <h2 class="main__title">Results</h2>
+        <div class="histogram__wrapper">
+          <span class="histogram__zero">0</span>
+          <ul class="histogram__list histogram__list--positive">
+            <li class="histogram__item histogram__item--positive">
+              <div class="histogram__number histogram__number--positive"></div>
+            </li>
+            <li class="histogram__item histogram__item--positive">
+              <div class="histogram__number histogram__number--positive"></div>
+            </li>
+            <li class="histogram__item histogram__item--positive">
+              <div class="histogram__number histogram__number--positive"></div>
+            </li>
+            <li class="histogram__item histogram__item--positive">
+              <div class="histogram__number histogram__number--positive"></div>
+            </li>
+          </ul>
+          <ul class="histogram__list histogram__list--negative">
+            <li class="histogram__item histogram__item--negative">
+              <div class="histogram__number histogram__number--negative"></div>
+            </li>
+            <li class="histogram__item histogram__item--negative">
+              <div class="histogram__number histogram__number--negative"></div>
+            </li>
+            <li class="histogram__item histogram__item--negative">
+              <div class="histogram__number histogram__number--negative"></div>
+            </li>
+            <li class="histogram__item histogram__item--negative">
+              <div class="histogram__number histogram__number--negative"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
