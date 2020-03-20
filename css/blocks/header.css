@@ -1,0 +1,21 @@
+.header {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.header__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.logo__link {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
