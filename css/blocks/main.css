@@ -91,11 +91,23 @@
   background-color: #333333;
 }
 
-.histogram__zero {
+.histogram__zero,
+.histogram__hundred,
+.histogram__hundred--minus {
   position: absolute;
   top: 292px;
-  left: -25px;
-  font-size: 30px;
+  left: -17px;
+  font-size: 20px;
+}
+
+.histogram__hundred {
+  top: -8px;
+  left: -50px;
+}
+
+.histogram__hundred--minus {
+  top: 590px;
+  left: -53px;
 }
 
 .histogram__item {
@@ -108,7 +120,7 @@
 
 .histogram__item--positive {
   justify-content: flex-end;
-  padding-bottom: 300px;
+  padding-bottom: 297px;
 }
 
 .histogram__item--negative {
@@ -121,3 +133,15 @@
   height: 0;
   background-color: #aaaaaa;
 }
+
+.histogram__item--positive .histogram__number {
+  border: 1px solid #666666;
+  border-bottom: none;
+}
+
+.histogram__item--negative .histogram__number {
+  border: 1px solid #666666;
+  border-top: none;
+}
+
+

@@ -20,10 +20,10 @@
       <form class="main__data-form data-form" action="#" autocomplete="off">
         <fieldset class="data-form__fieldset">
           <legend class="data-form__legend">Enter values</legend>
-          <input class="data-form__input" type="number" placeholder="50" id="0">
-          <input class="data-form__input" type="number" placeholder="160" id="1">
-          <input class="data-form__input" type="number" placeholder="70" id="2">
-          <input class="data-form__input" type="number" placeholder="180" id="3">  
+          <input class="data-form__input" type="number" placeholder="0">
+          <input class="data-form__input" type="number" placeholder="0">
+          <input class="data-form__input" type="number" placeholder="0">
+          <input class="data-form__input" type="number" placeholder="0">  
         </fieldset>
         <button class="data-form__button" type="submit">Render</button>
       </form>
@@ -31,6 +31,8 @@
         <h2 class="main__title">Results</h2>
         <div class="histogram__wrapper">
           <span class="histogram__zero">0</span>
+          <span class="histogram__hundred">100%</span>
+          <span class="histogram__hundred histogram__hundred--minus">-100%</span>
           <ul class="histogram__list">
             <li class="histogram__item">
               <div class="histogram__number"></div>
@@ -45,20 +47,6 @@
               <div class="histogram__number"></div>
             </li>
           </ul>
-          <!-- <ul class="histogram__list histogram__list--negative">
-            <li class="histogram__item histogram__item--negative">
-              <div class="histogram__number histogram__number--negative"></div>
-            </li>
-            <li class="histogram__item histogram__item--negative">
-              <div class="histogram__number histogram__number--negative"></div>
-            </li>
-            <li class="histogram__item histogram__item--negative">
-              <div class="histogram__number histogram__number--negative"></div>
-            </li>
-            <li class="histogram__item histogram__item--negative">
-              <div class="histogram__number histogram__number--negative"></div>
-            </li>
-          </ul> -->
         </div>
       </section>
 
